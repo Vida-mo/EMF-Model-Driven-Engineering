@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/event_modeling_metamodel/src-gen" creationIcons="false"
+    editDirectory="/event_modeling_metamodel.edit/src-gen" editorDirectory="/event_modeling_metamodel.editor/src-gen"
+    modelPluginID="event_modeling_metamodel" modelName="Event_modeling_metamodel"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="23.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>event_modeling_metamodel.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Event_modeling_metamodel" disposableProviderFactory="true"
+      ecorePackage="event_modeling_metamodel.ecore#/">
+    <genClasses ecoreClass="event_modeling_metamodel.ecore#//Slice">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event_modeling_metamodel.ecore#//Slice/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event_modeling_metamodel.ecore#//Slice/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference event_modeling_metamodel.ecore#//Slice/commands"/>
+    </genClasses>
+    <genClasses ecoreClass="event_modeling_metamodel.ecore#//Command">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event_modeling_metamodel.ecore#//Command/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute event_modeling_metamodel.ecore#//Command/title"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

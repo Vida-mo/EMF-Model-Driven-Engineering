@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: event_modeling_code_generator
+Bundle-SymbolicName: event_modeling_code_generator; singleton:=true
+Bundle-Version: 0.1.0.qualifier
+Require-Bundle: org.eclipse.emf.ecore,
+ event_modeling_metamodel;bundle-version="0.1.0",
+ org.eclipse.emf.ecore.xmi;bundle-version="2.38.0"

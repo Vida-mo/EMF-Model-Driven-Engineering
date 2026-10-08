@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ASCII"?>
+<event_modeling_metamodel:Slice xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:event_modeling_metamodel="http://www.example.org/event_modeling_metamodel" id="123" name="Demo Slice">
+  <commands id="c1" title="Command 1"/>
+  <commands id="c2" title="Command 2"/>
+</event_modeling_metamodel:Slice>

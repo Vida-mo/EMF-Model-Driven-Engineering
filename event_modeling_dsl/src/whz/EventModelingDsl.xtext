@@ -1,0 +1,36 @@
+grammar whz.EventModelingDsl with org.eclipse.xtext.common.Terminals
+
+generate eventModelingDsl "http://eventmodelingdsl.whz"
+
+EventModelingModel:
+	{EventModelingModel}
+	('slices:'
+	slices+=Slice*
+	'end')?
+	('events:'
+	events+=Event*
+	'end')?;
+
+Slice:
+	'Slice' name=ID ':'
+	('commands:'
+	commands+=Command*
+	'end')?;
+
+Command:
+	'Command' name=ID
+	('attributes:'
+	attributes+=CommandAttribute*
+	'end')?
+	'causes' event=[Event];
+
+CommandAttribute:
+	'Attribute' name=ID ':' type=PRIMITIVE_TYPE
+;
+
+enum PRIMITIVE_TYPE:
+	string|int|uuid	
+;
+
+Event:
+	'Event' name=ID;

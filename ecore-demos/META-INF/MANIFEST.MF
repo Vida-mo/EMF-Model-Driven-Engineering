@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Modelling_demos
+Bundle-SymbolicName: ecore-demos
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: modelling_demos.Activator
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.emf.ecore.xmi,
+ event_modeling_metamodel;bundle-version="0.1.0"
+Automatic-Module-Name: modelling_demos
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

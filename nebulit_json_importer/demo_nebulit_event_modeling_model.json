@@ -1,0 +1,192 @@
+{
+  "slices": [
+    {
+      "id": "3458764631464701435",
+      "status": "Created",
+      "index": 1,
+      "title": "slice: register user",
+      "context": "",
+      "sliceType": "STATE_CHANGE",
+      "commands": [
+        {
+          "id": "3458764631463850807",
+          "tags": [],
+          "domain": "",
+          "modelContext": "Registration",
+          "context": "INTERNAL",
+          "slice": "slice: register user",
+          "title": "command",
+          "fields": [
+            {
+              "name": "userId",
+              "example": "",
+              "mapping": "",
+              "optional": false,
+              "technicalAttribute": false,
+              "generated": false,
+              "idAttribute": true,
+              "type": "String",
+              "cardinality": "Single",
+              "schema": ""
+            },
+            {
+              "name": "email",
+              "example": "",
+              "mapping": "",
+              "optional": false,
+              "technicalAttribute": false,
+              "generated": false,
+              "idAttribute": false,
+              "type": "String",
+              "cardinality": "Single",
+              "schema": ""
+            },
+            {
+              "name": "name",
+              "example": "",
+              "mapping": "",
+              "optional": false,
+              "technicalAttribute": false,
+              "generated": false,
+              "idAttribute": false,
+              "type": "String",
+              "cardinality": "Single",
+              "schema": ""
+            },
+            {
+              "name": "vorname",
+              "example": "",
+              "mapping": "",
+              "optional": false,
+              "technicalAttribute": false,
+              "generated": false,
+              "idAttribute": false,
+              "type": "String",
+              "cardinality": "Single",
+              "schema": ""
+            }
+          ],
+          "type": "COMMAND",
+          "description": "",
+          "aggregateDependencies": [],
+          "dependencies": [],
+          "listElement": false,
+          "apiEndpoint": "",
+          "service": null,
+          "createsAggregate": false,
+          "prototype": {
+            "activeByDefault": false
+          }
+        }
+      ],
+      "events": [],
+      "readmodels": [],
+      "screens": [],
+      "processors": [],
+      "tables": [],
+      "specifications": [],
+      "actors": [],
+      "aggregates": []
+    },
+    {
+      "id": "3458764631464701723",
+      "status": "Created",
+      "index": 3,
+      "title": "slice: registered users",
+      "context": "",
+      "sliceType": "STATE_VIEW",
+      "commands": [],
+      "events": [],
+      "readmodels": [
+        {
+          "id": "3458764631464563314",
+          "tags": [],
+          "domain": "",
+          "modelContext": "Registration",
+          "context": "INTERNAL",
+          "slice": "slice: registered users",
+          "title": "read model",
+          "fields": [
+            {
+              "name": "userId",
+              "example": "",
+              "mapping": "",
+              "optional": false,
+              "technicalAttribute": false,
+              "generated": false,
+              "idAttribute": true,
+              "type": "String",
+              "cardinality": "Single",
+              "schema": ""
+            },
+            {
+              "name": "email",
+              "example": "",
+              "mapping": "",
+              "optional": false,
+              "technicalAttribute": false,
+              "generated": false,
+              "idAttribute": false,
+              "type": "String",
+              "cardinality": "Single",
+              "schema": ""
+            },
+            {
+              "name": "name",
+              "example": "",
+              "mapping": "",
+              "optional": false,
+              "technicalAttribute": false,
+              "generated": false,
+              "idAttribute": false,
+              "type": "String",
+              "cardinality": "Single",
+              "schema": ""
+            },
+            {
+              "name": "vorname",
+              "example": "",
+              "mapping": "",
+              "optional": false,
+              "technicalAttribute": false,
+              "generated": false,
+              "idAttribute": false,
+              "type": "String",
+              "cardinality": "Single",
+              "schema": ""
+            }
+          ],
+          "type": "READMODEL",
+          "description": "",
+          "aggregateDependencies": [],
+          "dependencies": [],
+          "listElement": false,
+          "apiEndpoint": null,
+          "service": null,
+          "createsAggregate": false,
+          "prototype": {
+            "activeByDefault": false
+          }
+        }
+      ],
+      "screens": [],
+      "processors": [],
+      "tables": [],
+      "specifications": [],
+      "actors": [],
+      "aggregates": []
+    }
+  ],
+  "flows": [],
+  "aggregates": [],
+  "actors": [],
+  "context": "Registration",
+  "codeGen": {
+    "application": "user_registration",
+    "domain": "",
+    "rootPackage": "whz.user_registration",
+    "contextPackage": ""
+  },
+  "boardId": "uXjVIBSobRA=",
+  "sliceGroups": []
+}
